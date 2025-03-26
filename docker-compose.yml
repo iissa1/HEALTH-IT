@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  health-it-app:
+    build: .
+    container_name: health-it  
+    ports:
+      - "9091:9091"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod  
+    volumes:
+      - ./build/libs:/HEALTH-IT  
+    restart: always  
