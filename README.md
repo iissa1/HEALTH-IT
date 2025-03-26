@@ -43,9 +43,14 @@ This project is a Spring/Java-based application that fetches and processes data 
 ```sh
 ./gradlew run
 ```
-
-
+## send api request to see data output 
+### Run the application
+```sh
+Once application is running, click 'localhost:9091/api' which do a get request. The request will servered by a response and also, there will be a console output. 
+```
 
 >[!NOTE]
 >To build the project or run the project make sure you're in the project directory after cloning. "~/project/HEALTH-IT/"
 
+>[!IMPORTANT]
+> 
