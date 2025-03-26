@@ -57,4 +57,35 @@ Once running, visit localhost:9091/api for a response and console output
 >To build the project or run the project make sure you're in the project directory after cloning. "~/project/HEALTH-IT/"
 
 >[!IMPORTANT]
-> 
+
+# Running with Docker
+### 1. Build the Application
+###### Before running the application in Docker, you need to build the app using Gradle:
+
+```sh
+./gradlew clean build
+```
+
+This will generate the JAR file (health-it-0.0.1-SNAPSHOT.jar) in the ./build/libs directory.
+
+## 2. Build the Docker Image
+Once the JAR is built, you can proceed to build the Docker image:
+
+```sh
+docker build -t health-it .
+```
+## 3. Start the Application
+To run the application in a Docker container, use the following command:
+
+```sh
+docker run -p 9091:9091 --name health-it  health-it
+```
+This will:
+
+Start the container with the name health-it.
+
+Map port 9091 inside the container to port 9091 on your local machine.
+
+```sh
+ http://localhost:9091 
+````
