@@ -12,7 +12,11 @@ This is small application for the purpose of solving a take home interview assig
 # Java Health-IT Data Processor
 
 ## Overview
-This project is a Spring/Java-based application that fetches and processes data from www.healthit.gov. It extracts and displays state-wise percentages of hospitals demonstrating Meaningful Use of CEHRT in 2014, sorted in descending order.
+This project is a Spring/Java-based application that fetches and processes data from www.healthit.gov. It extracts and displays state-wise percentages of hospitals demonstrating Meaningful Use of CEHRT in 2014, sorted in descending order. 
+
+## Sorting Order
+#### The expected ordering is:
+##### Descending by percentage → Highest percentage of hospitals demonstrating Meaningful Use of CEHRT appears first
 
 ## Features
 - Fetches data from the https://www.healthit.gov/data/open-api?source=Meaningful-Use-Acceleration-Scorecard.csv.
@@ -44,9 +48,9 @@ This project is a Spring/Java-based application that fetches and processes data 
 ./gradlew run
 ```
 ## send api request to see data output 
-### Run the application
-```sh
-Once application is running, click 'localhost:9091/api' which do a get request. The request will servered by a response and also, there will be a console output. 
+### once application is running
+```
+Once running, visit localhost:9091/api for a response and console output 
 ```
 
 >[!NOTE]
